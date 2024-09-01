@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation - Easy Tutorials YouTube Channel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <form name="submit-to-google-sheet">
+      <i class="bx bxs-paper-plane"></i>
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="fullName" onkeyup="validateName()" name="FullName">
+        <span id="name-error"></span>
+      </div>
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="123 456 7890" id="phoneNumber" onkeyup="validatePhone()" name="PhoneNumber">
+        <span id="phone-error"></span>
+      </div>
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" id="userEmail" onkeyup="validateEmail()" name="EmailID">
+        <span id="email-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Enter your message" id="message-holder" onkeyup="validateMessage()" name="Message"></textarea>
+        <span id="message-error"></span>
+      </div>
+
+      <button>Submit</button>
+      <span id="submit-error"></span>
+      <span id="submitted"></span>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
